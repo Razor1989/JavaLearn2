@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="829.0" prefWidth="1244.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="question.Controller">
+  <children>
+    <Label id="labelMaxQuesions" fx:id="labelMaxQuestions" layoutX="14.0" layoutY="799.0" text="Label" />
+    <TextArea fx:id="questionField" editable="false" layoutY="35.0" prefHeight="387.0" prefWidth="1216.0" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+    <VBox fx:id="paneAnswers" layoutY="437.0" prefHeight="349.0" prefWidth="1212.0" style="-fx-background-color: lightgrey" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="18.0" />
+    <Button layoutX="1146.0" layoutY="794.0" mnemonicParsing="false" onAction="#buttonSubmit" text="Abschicken" />
+    <Button layoutY="8.0" mnemonicParsing="false" onAction="#randomQuestionButton" text="Zufalls Frage" AnchorPane.rightAnchor="18.0" />
+  </children>
+</AnchorPane>

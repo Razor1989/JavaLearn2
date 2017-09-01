@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane mouseTransparent="false" prefHeight="861.0" prefWidth="1015.0" visible="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="AddQuestion.Controller">
+  <children>
+    <Text layoutX="443.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frage erstellen">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Text>
+    <TextArea fx:id="questionText" layoutX="14.0" layoutY="77.0" prefHeight="425.0" prefWidth="987.0" wrapText="true" />
+    <Text layoutX="14.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frage Text:" />
+    <RadioButton layoutX="8.0" layoutY="520.0" mnemonicParsing="false" selected="true" text="Single choice">
+      <toggleGroup>
+        <ToggleGroup fx:id="choiceTyp" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton layoutX="118.0" layoutY="520.0" mnemonicParsing="false" selected="false" text="Multi choice" toggleGroup="$choiceTyp" />
+    <Button layoutX="209.0" layoutY="518.0" mnemonicParsing="false" onAction="#addQuestionButton" text="Antwort hinzufügen" />
+    <VBox fx:id="paneAwnsers" layoutX="14.0" layoutY="551.0" prefHeight="262.0" prefWidth="987.0" />
+    <Button layoutX="346.0" layoutY="518.0" mnemonicParsing="false" onAction="#changeQuestionTyp" text="Fragen Typ ändern" />
+    <Button layoutX="14.0" layoutY="826.0" mnemonicParsing="false" onAction="#questionSave" text="Frage speichern" />
+    <Label fx:id="questionsStatus" layoutX="138.0" layoutY="556.0" text="" />
+  </children>
+</AnchorPane>
